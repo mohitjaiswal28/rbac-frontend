@@ -6,7 +6,7 @@
 
 <h2 style="margin-bottom: 0.5rem">Deployment Link 📦</h2>
 
-🌐 **Explore it here**: [https://rbac-mohitjaiswal.netlify.app/home/](https://rbac-mohitjaiswal.netlify.app/home/)
+🌐 **Explore it here**: [https://rbac-mohitjaiswal.netlify.app](https://rbac-mohitjaiswal.netlify.app)
 
 <h2 style="margin-bottom: 0.5rem">Features 🔥</h2>
 
