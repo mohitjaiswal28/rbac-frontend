@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+import { environment } from '../../../environment.prod';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ import { catchError } from 'rxjs/operators';
 
 export class UserService {
   private readonly API_CONFIG = {
-    baseUrl: 'http://localhost:8000',
+    baseUrl: environment.API_URL,
     version: 'v1',
     usersEndpoint: 'users',
     rolesEndpoint: 'roles'
