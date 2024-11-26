@@ -94,9 +94,4 @@ src/
 └── main.ts
 ```
 
-<h2 style="margin-bottom: 0.5rem">Screenshots</h2>
-
-<h2 style="margin-bottom: 0.5rem">Contributors</h2>
-<a href="https://github.com/mohitjaiswal28/rbac-frontend/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=mohitjaiswal28/rbac-frontend" />
-</a>
+<h2 style="margin-bottom: 0.5rem">Screenshots ✅</h2>
