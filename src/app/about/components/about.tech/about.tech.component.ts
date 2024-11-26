@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 
 export class AboutTechComponent {
   redirectToGitHubRepo() {
-    window.open('https://github.com/mohitjaiswal28?tab=repositories', '_blank');
+    window.open('https://github.com/mohitjaiswal28/rbac-frontend', '_blank');
   }
 }

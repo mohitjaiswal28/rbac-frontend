@@ -46,6 +46,11 @@ export class RoleService {
       .pipe(catchError(this.handleError));
   }
 
+  deleteRole(roleId: string): Observable<any> {
+    return this.http.delete<any>(`${this.apiUrl}/${roleId}`)
+      .pipe(catchError(this.handleError));
+  }
+
   private handleError(error: HttpErrorResponse): Observable<never> {
     let errorMessage = 'An error occurred';
 

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RoleService } from '../../services/role.service';
+import { NzMessageService } from 'ng-zorro-antd/message';
 
 @Component({
   selector: 'app-role-manage',
@@ -17,7 +18,10 @@ export class RoleManageComponent {
     'Action'
   ]
 
-  constructor(private roleService: RoleService) { }
+  constructor(
+    private roleService: RoleService,
+    private message: NzMessageService,
+  ) { }
 
   ngOnInit(): void {
     this.getList();
@@ -36,6 +40,16 @@ export class RoleManageComponent {
     }
     this.roleService.searchRole(this.searchData).subscribe((result: any) => {
       this.roles = result.data.roles;
+    });
+  }
+
+  confirmDelete(item: any): void {
+    this.roleService.deleteRole(item._id).subscribe({
+      next: (res: any) => {
+        this.message.success('Role deleted successfully');
+        this.getList();
+      },
+      error: (err: any) => this.message.error('Failed to delete role: ' + err.message),
     });
   }
 }

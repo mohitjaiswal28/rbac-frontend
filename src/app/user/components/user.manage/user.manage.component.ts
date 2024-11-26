@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UserService } from '../../services/user.service';
+import { NzMessageService } from 'ng-zorro-antd/message';
 
 @Component({
   selector: 'app-user-manage',
@@ -20,7 +21,10 @@ export class UserManageComponent {
     'Action'
   ]
 
-  constructor(private userService: UserService) { }
+  constructor(
+    private userService: UserService,
+    private message: NzMessageService,
+  ) { }
 
   ngOnInit(): void {
     this.getList();
@@ -39,6 +43,16 @@ export class UserManageComponent {
     }
     this.userService.searchUser(this.searchData).subscribe((result: any) => {
       this.users = result.data.users;
+    });
+  }
+
+  confirmDelete(item: any): void {
+    this.userService.deleteUser(item._id).subscribe({
+      next: (res: any) => {
+        this.message.success('User deleted successfully');
+        this.getList();
+      },
+      error: (err: any) => this.message.error('Failed to delete user: ' + err.message),
     });
   }
 }

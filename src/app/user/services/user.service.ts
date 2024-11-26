@@ -50,6 +50,10 @@ export class UserService {
     return this.http.patch<any>(`${this.usersApiUrl}/${userId}`, data).pipe(catchError(this.handleError));
   }
 
+  deleteUser(userId: string): Observable<any> {
+    return this.http.delete<any>(`${this.usersApiUrl}/${userId}`).pipe(catchError(this.handleError));
+  }
+
   private handleError(error: HttpErrorResponse): Observable<never> {
     let errorMessage = 'An error occurred';
 

@@ -1,9 +1,12 @@
 <h1 align="center" id="title" style="margin-bottom: 1rem">rbac-frontend</h1>
 
+<p align="center"><img src="https://socialify.git.ci/mohitjaiswal28/rbac-frontend/image?description=1&amp;descriptionEditable=A%20secure%20app%20with%20role-based%20access%20control%2C%20built%20using%20Angular%2016%2C%20Ng-Zorro%2C%20Tailwind%20CSS%2C%20Node.js%2C%20Express.js%2C%20and%20MongoDB%2C%20featuring%20lazy%20loading%20and%20GitHub%20Actions%20for%20automated%20deployment.&amp;name=1&amp;owner=1&amp;pattern=Solid&amp;theme=Light" alt="project-image" style="border-radius: 1rem; width: 80rem"></p>
+
 <p id="description">The RBAC Management System is a comprehensive role-based access control (RBAC) application that enables administrators to manage user's roles and permissions in a secure and efficient way. The platform is built using Angular and utilizes Ng-Zorro for UI components and Tailwind CSS for responsive design. This system ensures secure access management and is highly customizable for various user roles and permissions.</p>
 
-  
-  
+    
+<h2 style="margin-bottom: 0.5rem">Deployment Link 📦</h2>
+
 <h2 style="margin-bottom: 0.5rem">Features 🔥</h2>
 
 Here are some of the project's best features:
@@ -20,8 +23,7 @@ Here are some of the project's best features:
 
 *   User-Friendly Interface: Modern UI with Ng-Zorro and custom components for a sleek experience.
 
-  
-  
+
 <h2 style="margin-bottom: 0.5rem">Built with 🚀</h2>
 
 Technologies used in the project:
@@ -39,3 +41,62 @@ Technologies used in the project:
 *   Backend: Node.js and Express.js
 
 *   Database: MongoDB
+
+
+<h2 style="margin-bottom: 0.5rem">Install and Run ⚙️</h2>
+
+I. Prerequisites:
+
+- Node.js (>= 16.x.x)
+- npm (>= 8.x.x)
+
+II. Clone the repository:
+```bash
+  git clone https://github.com/mohitjaiswal28/rbac-frontend
+  cd rbac-management-system
+```
+
+III. Install dependencies:
+
+```bash
+  npm install
+```
+
+IV. Run the development server:
+```bash
+  npm start
+```
+
+V. This will start the application on http://localhost:4200.
+
+
+<h2 style="margin-bottom: 0.5rem">Project Structure 📁</h2>
+
+```
+src/
+├── app/
+│   ├── core/
+│   ├── shared/
+│   ├── home/
+│   ├── role/
+│   │   ├── role.add/
+│   │   └── role.manage/
+│   ├── user/
+│   │   ├── user.add/
+│   │   └── user.manage/
+│   ├── app-routing.module.ts
+│   ├── app.component.ts
+│   └── app.module.ts
+├── assets/
+├── environments/
+├── styles/
+├── index.html
+└── main.ts
+```
+
+<h2 style="margin-bottom: 0.5rem">Screenshots</h2>
+
+<h2 style="margin-bottom: 0.5rem">Contributors</h2>
+<a href="https://github.com/mohitjaiswal28/rbac-frontend/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=mohitjaiswal28/rbac-frontend" />
+</a>
