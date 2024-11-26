@@ -1,0 +1,45 @@
+<main class="bg-gray-50">
+  <div class="max-w-screen-xl mx-auto px-6">
+    <div
+      class="grid grid-cols-1 min-h-screen md:grid-cols-2 gap-8 items-center px-4 fixed top-8"
+    >
+      <div class="flex justify-center">
+        <img src="../../assets/images/about-project.png" alt="About Project" />
+      </div>
+      <div class="text-left">
+        <h1 class="text-4xl font-normal text-gray-900">
+          About the
+          <span class="text-blue-700 font-normal primary-font"
+            >RBAC Management System</span
+          >
+        </h1>
+
+        <p class="text-lg text-gray-600">
+          The
+          <span class="text-blue-700 font-semibold"
+            >Role-Based Access Control (RBAC)</span
+          >
+          Management System is designed to provide a secure and efficient way to
+          manage user access across a platform. By assigning roles and defining
+          permissions, it ensures seamless functionality and maintains the
+          integrity of your application.
+        </p>
+        <p class="text-lg text-gray-600">
+          <span class="text-blue-700 font-semibold">
+            The system simplifies complex user hierarchies
+          </span>
+          by allowing administrators to create and assign roles, control
+          permissions, and monitor access patterns.
+        </p>
+        <div class="space-x-4">
+          <button
+            class="bg-blue-600 text-white px-8 py-2 text-lg hover:bg-blue-700 transition duration-300"
+            [routerLink]="['/about/developer']"
+          >
+            About Developer
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

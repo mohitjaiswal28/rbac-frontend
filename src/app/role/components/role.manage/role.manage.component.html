@@ -1,0 +1,68 @@
+<nz-breadcrumb style="padding: 1.5rem; padding-bottom: 0">
+  <nz-breadcrumb-item>
+    <span nz-icon nzType="home" [routerLink]="'/home'"></span>
+  </nz-breadcrumb-item>
+  <nz-breadcrumb-item>Manage Roles</nz-breadcrumb-item>
+</nz-breadcrumb>
+
+<!-- <app-user-manage-dashboard></app-user-manage-dashboard> -->
+
+<div class="flex justify-between items-center mt-2 p-4">
+  <div>
+    <nz-input-group [nzSuffix]="suffixIconSearch" nzSearch nzSize="large">
+      <input
+        type="text"
+        nz-input
+        placeholder="Search"
+        type="text"
+        nz-input
+        placeholder="Search"
+        [(ngModel)]="searchData"
+        (ngModelChange)="search()"
+      />
+    </nz-input-group>
+    <ng-template #suffixIconSearch>
+      <span nz-icon nzType="search"></span>
+    </ng-template>
+  </div>
+
+  <div>
+    <button nz-button nzType="primary" [routerLink]="['/roles/add']">
+      Add Role
+    </button>
+  </div>
+</div>
+
+<nz-table [nzData]="roles" nzTableLayout="fixed" class="p-4">
+  <thead>
+    <tr>
+      <th *ngFor="let item of blocks">{{ item }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of roles">
+      <td>{{ item.name }}</td>
+      <td>
+        <nz-tag [nzColor]="item?.is_active ? 'green' : 'red'">
+          {{ item.is_active ? "Active" : "Inactive" }}
+        </nz-tag>
+      </td>
+      <td>
+        <div *ngFor="let permission of item.permissions">
+          <span>{{ permission }}</span>
+        </div>
+      </td>
+      <td>{{ item.createdAt | date }}</td>
+      <td>
+        <span
+          nz-icon
+          nzType="edit"
+          nz-tooltip
+          nzTooltipTitle="Edit"
+          class="cursor-pointer"
+          [routerLink]="['/roles/edit', item._id]"
+        ></span>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>

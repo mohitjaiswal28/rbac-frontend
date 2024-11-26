@@ -1,27 +1,41 @@
-# RbacFrontend
+<h1 align="center" id="title" style="margin-bottom: 1rem">rbac-frontend</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
+<p id="description">The RBAC Management System is a comprehensive role-based access control (RBAC) application that enables administrators to manage user's roles and permissions in a secure and efficient way. The platform is built using Angular and utilizes Ng-Zorro for UI components and Tailwind CSS for responsive design. This system ensures secure access management and is highly customizable for various user roles and permissions.</p>
 
-## Development server
+  
+  
+<h2 style="margin-bottom: 0.5rem">Features 🔥</h2>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Here are some of the project's best features:
 
-## Code scaffolding
+*  User Management: View create edit and delete users and manage their roles and permissions.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+*   Role Management: Create edit and delete roles and assign specific permissions.
 
-## Build
+*   Permission Management: Define and assign granular permissions to users and roles.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+*   Seamless Navigation: Smooth navigation with Lazy Loading for modules and Route Guards for access control.
 
-## Running unit tests
+*   Integrated: Already integrated with a backend system for dynamic user/role management.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+*   User-Friendly Interface: Modern UI with Ng-Zorro and custom components for a sleek experience.
 
-## Running end-to-end tests
+  
+  
+<h2 style="margin-bottom: 0.5rem">Built with 🚀</h2>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Technologies used in the project:
 
-## Further help
+*   Frontend: Angular 16 Tailwind CSS Ng-Zorro
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+*   Routing: Angular Router with Lazy Loading
+
+*   Build Tools: Webpack Angular CLI
+
+*   CI/CD: GitHub Actions (for deployment automation)
+
+*   Version Control: Git GitHub
+
+*   Backend: Node.js and Express.js
+
+*   Database: MongoDB

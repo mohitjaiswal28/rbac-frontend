@@ -2,7 +2,6 @@
   "name": "rbac-frontend",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -18,7 +17,11 @@
     "@angular/platform-browser": "^17.0.0",
     "@angular/platform-browser-dynamic": "^17.0.0",
     "@angular/router": "^17.0.0",
+    "autoprefixer": "^10.4.20",
+    "ng-zorro-antd": "^17.4.1",
+    "postcss": "^8.4.49",
     "rxjs": "~7.8.0",
+    "tailwindcss": "^3.4.15",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.2"
   },

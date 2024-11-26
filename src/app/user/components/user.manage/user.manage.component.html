@@ -1,0 +1,66 @@
+<nz-breadcrumb style="padding: 1.5rem; padding-bottom: 0">
+  <nz-breadcrumb-item>
+    <span nz-icon nzType="home" [routerLink]="'/home'"></span>
+  </nz-breadcrumb-item>
+  <nz-breadcrumb-item>Manage Users</nz-breadcrumb-item>
+</nz-breadcrumb>
+
+<!-- <app-user-manage-dashboard></app-user-manage-dashboard> -->
+
+<div class="flex justify-between items-center mt-2 p-4">
+  <div>
+    <nz-input-group [nzSuffix]="suffixIconSearch" nzSearch nzSize="large">
+      <input
+        type="text"
+        nz-input
+        placeholder="Search"
+        type="text"
+        nz-input
+        placeholder="Search"
+        [(ngModel)]="searchData"
+        (ngModelChange)="search()"
+      />
+    </nz-input-group>
+    <ng-template #suffixIconSearch>
+      <span nz-icon nzType="search"></span>
+    </ng-template>
+  </div>
+  <div>
+    <button nz-button nzType="primary" [routerLink]="['/users/add']">
+      Add User
+    </button>
+  </div>
+</div>
+
+<nz-table [nzData]="users" nzTableLayout="fixed" class="p-4">
+  <thead>
+    <tr>
+      <th *ngFor="let item of blocks">{{ item }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of users">
+      <td>{{ item.name }}</td>
+      <td>{{ item.email }}</td>
+      <td>{{ item.phone }}</td>
+      <td>{{ item.date_of_birth | date }}</td>
+      <td>{{ item.role_name }}</td>
+      <td>
+        <nz-tag [nzColor]="item?.is_active ? 'green' : 'red'">
+          {{ item.is_active ? "Active" : "Inactive" }}
+        </nz-tag>
+      </td>
+      <td>{{ item.createdAt | date }}</td>
+      <td>
+        <span
+          nz-icon
+          nzType="edit"
+          nz-tooltip
+          nzTooltipTitle="Edit"
+          class="cursor-pointer"
+          [routerLink]="['/users/edit', item._id]"
+        ></span>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>

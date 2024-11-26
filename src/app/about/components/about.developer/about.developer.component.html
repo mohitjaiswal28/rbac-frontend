@@ -1,0 +1,69 @@
+<main class="bg-gray-50">
+  <div class="max-w-screen-xl mx-auto px-6">
+    <div
+      class="grid grid-cols-1 min-h-screen md:grid-cols-2 gap-8 items-center px-4 fixed top-8"
+    >
+      <div class="text-left">
+        <h1 class="text-4xl font-normal text-gray-900">
+          About the
+          <span class="text-blue-700 font-normal primary-font">Developer</span>
+        </h1>
+
+        <p class="text-lg text-gray-600">
+          I am a passionate Full Stack Developer with a focus on creating
+          dynamic, user-centered applications. My expertise spans
+          <span class="text-blue-700 font-semibold"
+            >Angular, TypeScript, Tailwind CSS</span
+          >
+          for frontend development and
+          <span class="text-blue-700 font-semibold">Node.js</span> for efficient
+          backend solutions.
+        </p>
+        <p class="text-lg text-gray-600">
+          Proficient in
+          <span class="text-blue-700 font-semibold">AWS</span> (IAM, EC2, S3,
+          Lambda) and <span class="text-blue-700 font-semibold">Docker</span>.
+          Experienced in
+          <span class="text-blue-700 font-semibold"
+            >RESTful API integration</span
+          >
+          with Angular,
+          <span class="text-blue-700 font-semibold">TIA routing</span>,
+          <span class="text-blue-700 font-semibold">Mapbox</span> integration,
+          and
+          <span class="text-blue-700 font-semibold">frontend optimization</span
+          >.
+        </p>
+        <p class="text-lg text-gray-600">
+          With a passion for continuous learning, I am actively solving
+          <span class="text-blue-700 font-semibold">DSA problems in C++</span>
+          and participating in coding events. I thrive in collaborative
+          environments and am always eager to contribute to innovative projects.
+        </p>
+        <div class="space-x-4">
+          <button
+            class="bg-blue-600 text-white px-8 py-2 text-lg hover:bg-blue-700 transition duration-300"
+            (click)="redirectToPortfolio()"
+          >
+            Visit Portfolio
+          </button>
+          <button
+            class="bg-transparent border-2 border-blue-500 text-blue-600 px-8 py-2 text-lg hover:bg-blue-600 hover:text-white transition duration-300"
+            (click)="redirectToLinkedIn()"
+          >
+            Contact me on
+            <span
+              nz-icon
+              nzType="linkedin"
+              nzTheme="outline"
+              class="text-xl"
+            ></span>
+          </button>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <img src="../../assets/images/about-dev.png" alt="About Developer" />
+      </div>
+    </div>
+  </div>
+</main>

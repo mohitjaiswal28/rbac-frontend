@@ -1,0 +1,62 @@
+<nz-layout>
+  <nz-header
+    class="header-bg text-dark flex items-center justify-between px-4 shadow-md w-full"
+  >
+    <h4 class="text-lg mt-2 cursor-pointer" (click)="navigateTo('/home')">
+      <span nz-icon nzType="safety" class="mr-2 h-8"></span>
+      <span class="text-blue-600">RBAC Management System</span>
+    </h4>
+    <ul nz-menu nzMode="horizontal" class="m-0 header-bg">
+      <li
+        nz-menu-item
+        [routerLink]="'/home'"
+        routerLinkActive="nz-selected"
+        [nzSelected]="isSelected('/home')"
+      >
+        Home
+      </li>
+      <li
+        nz-submenu
+        nzPlacement="bottomRight"
+        [nzOpen]="isSubmenuOpen"
+        (nzOpenChange)="toggleArrow($event)"
+        [nzTitle]="menuTitle"
+      >
+        <ng-template #menuTitle>
+          <span>About</span>
+          <span
+            nz-icon
+            [nzType]="isSubmenuOpen ? 'up' : 'down'"
+            class="ml-1"
+          ></span>
+        </ng-template>
+        <ul>
+          <li
+            nz-menu-item
+            [routerLink]="'/about/project'"
+            routerLinkActive="nz-selected"
+            [nzSelected]="isSelected('/about/project')"
+          >
+            Project
+          </li>
+          <li
+            nz-menu-item
+            [routerLink]="'/about/developer'"
+            routerLinkActive="nz-selected"
+            [nzSelected]="isSelected('/about/developer')"
+          >
+            Developer
+          </li>
+          <li
+            nz-menu-item
+            [routerLink]="'/about/tech'"
+            routerLinkActive="nz-selected"
+            [nzSelected]="isSelected('/about/tech')"
+          >
+            Tech Stack Used
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nz-header>
+</nz-layout>

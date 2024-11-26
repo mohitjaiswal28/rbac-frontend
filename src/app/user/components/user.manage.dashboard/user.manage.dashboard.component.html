@@ -1,0 +1,26 @@
+<div
+  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4 p-4"
+>
+  <!-- Total Users Card -->
+  <nz-card class="w-full p-6 border-gray-200 rounded-xl bg-blue-50">
+    <div class="flex items-center space-x-4">
+      <nz-avatar
+        nzIcon="user"
+        class="bg-blue-500 p-3 rounded-full text-white"
+      ></nz-avatar>
+      <div>
+        <nz-statistic
+          [nzTitle]="'Total Users'"
+          [nzValue]="1230"
+          [nzPrefix]="''"
+          [nzValueStyle]="{
+            'font-size': '1.5rem',
+            'font-weight': '600',
+            color: '#333'
+          }"
+          [nzSuffix]="'this month'"
+        ></nz-statistic>
+      </div>
+    </div>
+  </nz-card>
+</div>
