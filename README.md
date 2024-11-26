@@ -4,7 +4,6 @@
 
 <p id="description">The RBAC Management System is a comprehensive role-based access control (RBAC) application that enables administrators to manage user's roles and permissions in a secure and efficient way. The platform is built using Angular and utilizes Ng-Zorro for UI components and Tailwind CSS for responsive design. This system ensures secure access management and is highly customizable for various user roles and permissions.</p>
 
-    
 <h2 style="margin-bottom: 0.5rem">Deployment Link 📦</h2>
 
 🌐 **Explore it here**: [https://rbac-mohitjaiswal.netlify.app/home/](https://rbac-mohitjaiswal.netlify.app/home/)
@@ -13,37 +12,35 @@
 
 Here are some of the project's best features:
 
-*  User Management: View create edit and delete users and manage their roles and permissions.
+- User Management: View create edit and delete users and manage their roles and permissions.
 
-*   Role Management: Create edit and delete roles and assign specific permissions.
+- Role Management: Create edit and delete roles and assign specific permissions.
 
-*   Permission Management: Define and assign granular permissions to users and roles.
+- Permission Management: Define and assign granular permissions to users and roles.
 
-*   Seamless Navigation: Smooth navigation with Lazy Loading for modules and Route Guards for access control.
+- Seamless Navigation: Smooth navigation with Lazy Loading for modules and Route Guards for access control.
 
-*   Integrated: Already integrated with a backend system for dynamic user/role management.
+- Integrated: Already integrated with a backend system for dynamic user/role management.
 
-*   User-Friendly Interface: Modern UI with Ng-Zorro and custom components for a sleek experience.
-
+- User-Friendly Interface: Modern UI with Ng-Zorro and custom components for a sleek experience.
 
 <h2 style="margin-bottom: 0.5rem">Built with 🚀</h2>
 
 Technologies used in the project:
 
-*   Frontend: Angular 16 Tailwind CSS Ng-Zorro
+- Frontend: Angular 16 Tailwind CSS Ng-Zorro
 
-*   Routing: Angular Router with Lazy Loading
+- Routing: Angular Router with Lazy Loading
 
-*   Build Tools: Webpack Angular CLI
+- Build Tools: Webpack Angular CLI
 
-*   CI/CD: GitHub Actions (for deployment automation)
+- CI/CD: GitHub Actions (for deployment automation)
 
-*   Version Control: Git GitHub
+- Version Control: Git GitHub
 
-*   Backend: Node.js and Express.js
+- Backend: Node.js and Express.js
 
-*   Database: MongoDB
-
+- Database: MongoDB
 
 <h2 style="margin-bottom: 0.5rem">Install and Run ⚙️</h2>
 
@@ -53,6 +50,7 @@ I. Prerequisites:
 - npm (>= 8.x.x)
 
 II. Clone the repository:
+
 ```bash
   git clone https://github.com/mohitjaiswal28/rbac-frontend
   cd rbac-management-system
@@ -65,12 +63,12 @@ III. Install dependencies:
 ```
 
 IV. Run the development server:
+
 ```bash
   npm start
 ```
 
 V. This will start the application on http://localhost:4200.
-
 
 <h2 style="margin-bottom: 0.5rem">Project Structure 📁</h2>
 
@@ -98,7 +96,34 @@ src/
 
 <h2 style="margin-bottom: 0.5rem">Screenshots ✅</h2>
 
+- Home Page
+
+![Home](demo/1.png)
+
+- About Project
+
+![About Porject](demo/2.png)
+
+- About Developer
+
+![About Developer](demo/3.png)
+
+- About Tech Stack Used
+
+![About Tech Stack used](demo/4.png)
+
+- User Functionalities
+
+![](demo/5.png)
+![](demo/6.png)
+![](demo/7.png)
+![](demo/8.png)
+
+- Role Functionalities
+
+![](demo/9.png)
+![](demo/10.png)
+
 <h2 style="margin-bottom: 0.5rem">Contact 💡</h2> 
 For inquiries, please reach out to:
 Mohit Jaiswal: mohitjaiswal2883@gmail.com ✉️
-
